@@ -12,6 +12,7 @@ This has been tested with:
 
 * the PIC18F4550 on the development board from CCS with their example program. 
 * the Fine Offset WH3081 Weather Station.
+* the UNI-T UT71B Multimeter
 
 It works on Linux, Windows XP and OS X. 
 
@@ -21,6 +22,7 @@ Software Dependencies
 
 * Python (http://python.org/download/)
 * Cython (http://cython.org/#download)
+* HIDAPI (http://www.signal11.us/oss/hidapi/)
 
 
 License
@@ -40,11 +42,11 @@ For other download options (zip, tarball) visit the github web page of `cython-h
 
 2. Build cython-hidapi extension module for your platform::
 
-    $ python setup[-mac|-windows].py build
+    $ python setup[-windows].py build
 
 3. Install cython-hidapi module into your Python distribution::
   
-    $ [sudo] python setup[-mac|-windows].py install
+    $ [sudo] python setup[-windows].py install
     
 3. Test install::
 
